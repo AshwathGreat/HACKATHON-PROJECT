@@ -1,0 +1,86 @@
+{
+  "_readme": "Deterministic matching ONLY reads this file. Never let an LLM generate or edit scheme entries. Always keep 'official_source' pointing to a .gov.in / state government domain. Re-verify periodically (see last_verified) since deadlines/portals change.",
+
+  "schemes": [
+    {
+      "scheme_id": "pmfby",
+      "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY) - Crop Insurance",
+      "state": "All India (including Maharashtra)",
+      "level": "Central Government",
+      "applicable_crops": ["Tomato", "Cotton", "Soybean", "Onion", "Rice", "*"],
+      "category": "Crop insurance / pest & disease damage compensation",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Farmer must have enrolled for PMFBY for the relevant season (Kharif/Rabi) BEFORE the loss occurred, in a notified crop/area, to claim compensation. If not already enrolled, the farmer is not eligible for a claim on a loss that already happened, but should enroll before the next season."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenancy proof",
+        "Bank account details (linked to Aadhaar)",
+        "Sowing certificate (in some cases)",
+        "PMFBY policy/enrollment proof"
+      ],
+      "application_process": "Enroll before the season's cut-off date via bank branch, Common Service Centre (CSC), authorized insurance channel partner, or the national Crop Insurance app/portal. To claim after a loss, report within 72 hours of the damaging event through the portal, app, or insurance company/bank.",
+      "official_source": "https://pmfby.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "pmkisan",
+      "scheme_name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+      "state": "All India (including Maharashtra)",
+      "level": "Central Government",
+      "applicable_crops": ["*"],
+      "category": "Direct income support",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Income support scheme, not tied to a specific crop-loss event. Eligible landholding farmer families receive fixed installments per year, subject to standard exclusion criteria (e.g. certain institutional landholders, income-tax payers) set by the scheme guidelines."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land record documents",
+        "Bank account details"
+      ],
+      "application_process": "Register via the PM-KISAN portal, Common Service Centre (CSC), or local revenue/agriculture office (patwari/talathi/agriculture assistant) for eKYC and land record verification.",
+      "official_source": "https://pmkisan.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "maha_dbt_farmer_schemes",
+      "scheme_name": "MahaDBT Farmer Schemes Portal (multiple Maharashtra state schemes)",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": ["*"],
+      "category": "Multiple: input subsidy, mechanization, irrigation support, etc. (varies by sub-scheme)",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "MahaDBT is an umbrella portal listing multiple Maharashtra Department of Agriculture schemes (subsidies for seeds/equipment/irrigation etc). Specific eligibility varies by sub-scheme and is set each season on the portal — the farmer should check current open schemes for their district and crop."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "7/12 land extract and 8-A record",
+        "Bank account details"
+      ],
+      "application_process": "Register and apply directly on the MahaDBT Farmer portal; specific sub-schemes open/close on a rolling basis through the season.",
+      "official_source": "https://mahadbt.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "maharashtra_krishi_dept",
+      "scheme_name": "Maharashtra Department of Agriculture - General Farmer Support & Advisory",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": ["*"],
+      "category": "Advisory / scheme directory / extension support",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Not a single scheme — this is the state Department of Agriculture's own site, useful as an authoritative directory for current district-level schemes, disaster relief input-subsidy (Government Resolution based, issued after specific calamities), and contact details for local Krishi Vibhag officers."
+      },
+      "required_documents": [
+        "Varies by specific scheme/GR — check current notifications"
+      ],
+      "application_process": "Contact the local Krishi Vibhag office (Taluka/District Agriculture Officer) or check the department website for current Government Resolutions (GRs) relevant to your district and situation (e.g. post-calamity input subsidy).",
+      "official_source": "https://krishi.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    }
+  ]
+}

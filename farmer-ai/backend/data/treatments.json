@@ -1,0 +1,4 @@
+{
+  "_readme": "Reserved for Phase 2+ expansion: structured, source-verified pesticide/fungicide product + dose tables per disease per state (dosage rules vary by state regulation). For MVP, diseases.json's 'immediate_actions' intentionally avoids specific doses and instead points farmers to local Krishi Vibhag/KVK/licensed dealers. Do NOT populate this file with LLM-generated dosages — only add entries sourced from official state agriculture department advisories.",
+  "entries": []
+}

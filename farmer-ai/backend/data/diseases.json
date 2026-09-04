@@ -1,0 +1,144 @@
+{
+  "_readme": "Every entry here must be traceable to an official/agricultural-extension source. Do not let any LLM edit this file. Update 'last_verified' whenever you check a source is still live. Dosage/product names are deliberately omitted for MVP — always tell farmers to confirm exact product & dose with local Krishi Vibhag / KVK / a licensed dealer.",
+
+  "Tomato___healthy": {
+    "crop": "Tomato",
+    "disease": "Healthy",
+    "symptoms": "No visible disease symptoms. Leaves are uniformly green, no spots, wilting, or discoloration.",
+    "immediate_actions": [
+      "No treatment needed.",
+      "Continue regular monitoring, ideally twice a week."
+    ],
+    "prevention": [
+      "Maintain proper spacing for airflow.",
+      "Water at the base, avoid wetting foliage.",
+      "Rotate crops each season; avoid planting tomato/potato in the same spot repeatedly."
+    ],
+    "warning": "Re-check the plant if any spots, curling, or yellowing appear later.",
+    "source": "General good agricultural practice — verify locally with your Krishi Vibhag / nearest Krishi Vigyan Kendra (KVK).",
+    "last_verified": "2026-09-03"
+  },
+
+  "Tomato___Early_blight": {
+    "crop": "Tomato",
+    "disease": "Early Blight (Alternaria solani)",
+    "symptoms": "Dark concentric-ring ('target') spots on older/lower leaves first, yellowing around spots, can spread upward and defoliate the plant if unmanaged.",
+    "immediate_actions": [
+      "Remove and destroy visibly infected lower leaves to slow spread.",
+      "Improve airflow around plants; avoid overhead watering.",
+      "If disease is spreading, consult your local Krishi Vibhag / KVK / registered pesticide dealer for an approved fungicide and correct dose for your area — do not self-prescribe."
+    ],
+    "prevention": [
+      "Use disease-free seed/transplants.",
+      "Practice crop rotation (avoid tomato/potato in the same field 2-3 seasons running).",
+      "Remove and destroy old crop debris after harvest.",
+      "Irrigate so foliage dries quickly (drip preferred over overhead sprinklers)."
+    ],
+    "warning": "Uncontrolled early blight can significantly reduce marketable yield. Confirm diagnosis with an agricultural officer before spending on treatment, especially if this is your main livelihood crop.",
+    "source": "UC Statewide IPM Program, Early Blight/Tomato (ipm.ucanr.edu/agriculture/tomato/early-blight/); UConn/UMass Extension early blight management notes.",
+    "last_verified": "2026-09-03"
+  },
+
+  "Tomato___Late_blight": {
+    "crop": "Tomato",
+    "disease": "Late Blight (Phytophthora infestans)",
+    "symptoms": "Dark, water-soaked lesions on leaves and stems that enlarge quickly; white fungal growth on leaf undersides in humid/cool weather; dark greasy lesions on fruit. Can defoliate a plant within ~2 weeks in favorable weather.",
+    "immediate_actions": [
+      "This disease spreads very fast in cool, wet weather — act quickly.",
+      "Remove and destroy (do not compost) severely infected plants/leaves to reduce spread to neighboring plants.",
+      "Avoid overhead irrigation immediately.",
+      "Contact your local Krishi Vibhag / KVK urgently — late blight often needs prompt, correctly-timed fungicide application; get local, verified guidance rather than delaying."
+    ],
+    "prevention": [
+      "Use certified disease-free seedlings.",
+      "Avoid sprinkler irrigation; keep foliage dry.",
+      "Remove volunteer tomato/potato plants and nightshade weeds nearby.",
+      "Check transplants for symptoms before planting."
+    ],
+    "warning": "Late blight is one of the most destructive tomato diseases and can cause severe crop loss very quickly. Treat this as urgent — do not wait to see if it 'goes away'.",
+    "source": "UC Statewide IPM Program, Late Blight/Tomato (ipm.ucanr.edu/agriculture/tomato/late-blight/); Cornell Vegetables Late Blight guide (vegetables.cornell.edu/crops/tomatoes/late-blight/).",
+    "last_verified": "2026-09-03"
+  },
+
+  "Tomato___Leaf_Mold": {
+    "crop": "Tomato",
+    "disease": "Leaf Mold (Passalora fulva / Fulvia fulva)",
+    "symptoms": "Pale green/yellow spots on upper leaf surface, with olive-green to grayish-purple fuzzy mold on the underside directly below. Common in humid conditions, especially in polyhouses/greenhouses.",
+    "immediate_actions": [
+      "Increase ventilation and reduce humidity around plants (this disease thrives above ~85% humidity).",
+      "Remove and destroy the most affected leaves.",
+      "Avoid overhead watering; water at soil level.",
+      "If in a polyhouse/greenhouse, widen plant spacing and increase airflow."
+    ],
+    "prevention": [
+      "Use resistant varieties where available.",
+      "Keep humidity down, especially in protected cultivation.",
+      "Avoid overcrowding plants.",
+      "Practice crop rotation and remove crop debris after harvest."
+    ],
+    "warning": "Mainly a greenhouse/polyhouse problem in most regions but can occur in humid open-field conditions too. Confirm with local extension staff if unsure, since it can resemble other leaf-spot diseases.",
+    "source": "General extension plant-pathology guidance (Cornell/Clemson HGIC tomato disease fact sheets) — cross-check locally with your KVK for region-specific advice.",
+    "last_verified": "2026-09-03"
+  },
+
+  "Tomato___Septoria_leaf_spot": {
+    "crop": "Tomato",
+    "disease": "Septoria Leaf Spot (Septoria lycopersici)",
+    "symptoms": "Small, circular spots with dark borders and light gray/tan centers, usually starting on lower leaves. Tiny black specks (fungal fruiting bodies) may be visible in the center of spots. Can cause heavy leaf drop if unmanaged.",
+    "immediate_actions": [
+      "Remove and destroy affected lower leaves promptly.",
+      "Avoid working in the field when leaves are wet, to reduce spread.",
+      "Improve airflow between plants.",
+      "Consult your local Krishi Vibhag/KVK if spread continues, for a locally approved fungicide and correct dose."
+    ],
+    "prevention": [
+      "Rotate crops away from tomato/potato family for at least 2 seasons.",
+      "Remove and destroy crop debris after harvest — the fungus survives on old plant material.",
+      "Mulch around plants to reduce soil splash onto lower leaves.",
+      "Avoid overhead irrigation."
+    ],
+    "warning": "Can be confused with early blight — Septoria spots are smaller and lack the 'target-ring' pattern. Get a second opinion if treatment doesn't help within a week or two.",
+    "source": "General plant-pathology extension guidance (Cornell/Clemson/UMass tomato disease fact sheets) — verify locally with your KVK.",
+    "last_verified": "2026-09-03"
+  },
+
+  "Tomato___Spider_mites_Two_spotted_spider_mite": {
+    "crop": "Tomato",
+    "disease": "Two-Spotted Spider Mite infestation (pest, not a disease)",
+    "symptoms": "Fine yellow/white stippling (tiny dots) on leaves, leaves may turn bronze/yellow and dry out, fine webbing visible on the underside of leaves or between leaves in heavy infestations. Worse in hot, dry weather.",
+    "immediate_actions": [
+      "Spray plants (especially leaf undersides) with a strong jet of water to dislodge mites — often enough for mild infestations.",
+      "Avoid excess nitrogen fertilizer, which favors mite population growth.",
+      "For heavier infestations, consult your local Krishi Vibhag/KVK about an approved miticide — spider mites resist many general pesticides, so a targeted product is important."
+    ],
+    "prevention": [
+      "Keep plants adequately watered — drought-stressed plants are more susceptible.",
+      "Encourage natural predators (e.g. predatory mites, ladybird beetles) by avoiding unnecessary broad-spectrum spraying.",
+      "Monitor regularly during hot, dry spells."
+    ],
+    "warning": "This is a pest infestation, not a fungal/viral disease — treatment approach is different from the other categories here.",
+    "source": "General IPM extension guidance on two-spotted spider mite in tomato — verify locally with your KVK for region-appropriate miticides.",
+    "last_verified": "2026-09-03"
+  },
+
+  "Tomato___Tomato_mosaic_virus": {
+    "crop": "Tomato",
+    "disease": "Tomato Mosaic Virus (ToMV)",
+    "symptoms": "Mottled light/dark green mosaic pattern on leaves, leaf curling/distortion, stunted plant growth, sometimes malformed or discolored fruit.",
+    "immediate_actions": [
+      "There is no chemical cure for viral infection — focus is on containment.",
+      "Remove and destroy infected plants to prevent spread to healthy plants.",
+      "Wash hands and disinfect tools (e.g. with a dilute bleach or soap solution) after handling infected plants, since the virus spreads easily by contact.",
+      "Avoid working with tobacco products before handling plants — ToMV can spread via tobacco mosaic virus-contaminated hands."
+    ],
+    "prevention": [
+      "Use certified virus-free seed and resistant varieties where available.",
+      "Disinfect tools and hands between plants, especially when pruning/staking.",
+      "Control weeds that can host the virus.",
+      "Avoid reusing infected plant debris or seed saved from infected plants."
+    ],
+    "warning": "Infected plants cannot be cured — the goal is stopping spread to protect the rest of the field. Confirm diagnosis with a local expert since symptoms can overlap with other viruses (e.g. mosaic caused by ToMV vs TMV vs other viral complexes).",
+    "source": "General plant virology extension guidance — verify locally with your KVK / State Agriculture University (e.g. Mahatma Phule Krishi Vidyapeeth, Rahuri, for Maharashtra).",
+    "last_verified": "2026-09-03"
+  }
+}

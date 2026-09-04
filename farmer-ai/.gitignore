@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+model/data/
+model/*.pt
+!model/.gitkeep
+.DS_Store
+*.log
+notebooks/.ipynb_checkpoints/

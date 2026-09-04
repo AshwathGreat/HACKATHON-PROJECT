@@ -1,0 +1,23 @@
+# --- Core backend ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-dotenv==1.0.1
+python-multipart==0.0.9
+requests==2.32.3
+pydantic==2.9.2
+
+# --- ML / CV ---
+torch==2.4.1
+torchvision==0.19.1
+pillow==10.4.0
+
+# --- Optional: DB (only needed from Phase 7 onward if you persist state) ---
+# psycopg2-binary==2.9.9
+# sqlalchemy==2.0.35
+
+# --- Voice (Phase 6) ---
+# openai-whisper  (or faster-whisper) -- installed later, see Phase 6 notes
+# gTTS==2.5.3
+
+# --- Dev/testing ---
+pytest==8.3.3

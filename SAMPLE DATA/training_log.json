@@ -1,0 +1,84 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5525757082556341,
+      "train_acc": 0.815214459131373,
+      "val_loss": 0.2685212284558131,
+      "val_acc": 0.9117330462863293
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.309922935789346,
+      "train_acc": 0.894388993795522,
+      "val_loss": 0.18371753981479808,
+      "val_acc": 0.9381054897739505
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.24784821083169759,
+      "train_acc": 0.9144861073644457,
+      "val_loss": 0.1519477792455518,
+      "val_acc": 0.9504843918191603
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.234015314094873,
+      "train_acc": 0.9177232263285676,
+      "val_loss": 0.12672034446305452,
+      "val_acc": 0.9569429494079655
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1830607683209153,
+      "train_acc": 0.9366064202859455,
+      "val_loss": 0.139635896060807,
+      "val_acc": 0.9515608180839612
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.09298251115694131,
+      "train_acc": 0.9683032101429727,
+      "val_loss": 0.038957762945208016,
+      "val_acc": 0.9881593110871906
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.04745482191687642,
+      "train_acc": 0.985028324790936,
+      "val_loss": 0.027072688286212544,
+      "val_acc": 0.9908503767491926
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.03401567219935673,
+      "train_acc": 0.9888049635824117,
+      "val_loss": 0.027707717966681998,
+      "val_acc": 0.9903121636167922
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.025714169069345802,
+      "train_acc": 0.9925816023738873,
+      "val_loss": 0.017737753629264396,
+      "val_acc": 0.9951560818083961
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.018766683307073113,
+      "train_acc": 0.9940652818991098,
+      "val_loss": 0.020811167207836635,
+      "val_acc": 0.9930032292787944
+    }
+  ],
+  "best_val_acc": 0.9951560818083961,
+  "classes": [
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___Spider_mites_Two_spotted_spider_mite",
+    "Tomato___Tomato_mosaic_virus",
+    "Tomato___healthy"
+  ]
+}
