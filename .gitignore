@@ -1,0 +1,8 @@
+.venv/
+farmer-ai.zip
+farmer-aiold/
+farmer-aiold2/
+*.zip
+__pycache__/
+*.pyc
+.env
