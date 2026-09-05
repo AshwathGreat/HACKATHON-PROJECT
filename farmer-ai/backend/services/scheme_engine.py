@@ -62,9 +62,23 @@ def find_potentially_relevant_schemes(
         if not crop_ok:
             continue
 
+        conditions = scheme.get("conditions", {})
+        min_damage = conditions.get("min_damage_pct")
+        note = None
+
+        if min_damage is not None:
+            if damage_pct is None:
+                # Can't confirm eligibility either way - include but flag it explicitly
+                note = (
+                    f"This scheme typically requires at least ~{min_damage:.0f}% crop damage. "
+                    "You didn't specify a damage percentage, so we can't confirm this applies to you."
+                )
+            elif damage_pct < min_damage:
+                # Genuinely doesn't meet the threshold - exclude rather than show a false hope
+                continue
+
         # Scheme-specific extra rule: PMFBY needs a loss event that occurred
         # AFTER enrollment - flag this clearly rather than silently including it.
-        note = None
         if scheme["scheme_id"] == "pmfby" and has_insurance is False:
             note = (
                 "You indicated you are not currently insured under PMFBY. "

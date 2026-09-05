@@ -81,6 +81,28 @@
       "application_process": "Contact the local Krishi Vibhag office (Taluka/District Agriculture Officer) or check the department website for current Government Resolutions (GRs) relevant to your district and situation (e.g. post-calamity input subsidy).",
       "official_source": "https://krishi.maharashtra.gov.in",
       "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "maharashtra_disaster_input_subsidy",
+      "scheme_name": "Maharashtra Disaster/Calamity Input Subsidy (crop loss relief)",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": ["*"],
+      "category": "Post-calamity input subsidy for significant crop damage",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": 33,
+        "notes": "Maharashtra periodically issues Government Resolutions (GRs) providing input subsidy to farmers after natural calamities (unseasonal rain, pest outbreaks, etc.) when crop loss crosses a threshold - historically around 33% loss, following national SDRF/NDRF norms, though the exact threshold and rate vary by GR. This is only genuinely relevant if your damage is significant."
+      },
+      "required_documents": [
+        "7/12 land extract and 8-A record",
+        "Aadhaar card",
+        "Bank account details",
+        "Panchnama (crop damage survey/assessment) done by local revenue/agriculture officials"
+      ],
+      "application_process": "Crop damage is typically assessed via a village-level Panchnama survey conducted by the Talathi/Agriculture Assistant after a calamity is reported. Contact your local Krishi Vibhag or Talathi office to request a survey if you haven't already had one done. Payment follows the specific GR issued for that calamity/season.",
+      "official_source": "https://krishi.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
     }
   ]
 }
