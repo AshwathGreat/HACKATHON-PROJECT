@@ -1,6 +1,6 @@
 """
-One-click Public Tunnel for KisanGo WhatsApp Bot.
-Uses pyngrok to safely establish an SSL public tunnel to localhost:8000.
+One-click Public Tunnel for KisanGo WhatsApp Bot using Cloudflare.
+Automatically downloads cloudflared and establishes a secure public tunnel to localhost:8000.
 
 Usage:
     python tunnel.py
@@ -9,63 +9,89 @@ Usage:
 import os
 import sys
 import time
-from dotenv import load_dotenv
+import urllib.request
+import subprocess
+import re
+import threading
 
-load_dotenv()
+CLOUDFLARED_URL = "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe"
+CLOUDFLARED_EXE = "cloudflared.exe"
 
-try:
-    from pyngrok import ngrok, conf
-except ImportError:
-    print("Installing pyngrok...")
-    os.system("pip install pyngrok")
-    from pyngrok import ngrok, conf
+def download_cloudflared():
+    if not os.path.exists(CLOUDFLARED_EXE):
+        print("[INFO] Cloudflare tunnel executable not found.")
+        print("[INFO] Downloading cloudflared.exe (this may take a moment)...")
+        try:
+            urllib.request.urlretrieve(CLOUDFLARED_URL, CLOUDFLARED_EXE)
+            print("[INFO] Download complete!")
+        except Exception as e:
+            print(f"❌ Error downloading cloudflared: {e}")
+            sys.exit(1)
 
 def start_tunnel():
     print("\n" + "=" * 60)
-    print(" 🌐 KisanGo WhatsApp Bot - One-Click Public Tunnel")
+    print(" 🌐 KisanGo WhatsApp Bot - Cloudflare Public Tunnel")
     print("=" * 60 + "\n")
 
-    # Check if authtoken is configured
-    token = os.getenv("NGROK_AUTHTOKEN", "").strip()
+    download_cloudflared()
+
+    print("[INFO] Starting tunnel to http://localhost:8000 ...\n")
     
-    # Try reading token from user if not set
-    config = conf.get_default()
-    if not config.auth_token and not token:
-        print("💡 Enter your free ngrok authtoken from: https://dashboard.ngrok.com/get-started/your-authtoken")
-        user_token = input("Paste token here (or press Enter if already configured): ").strip()
-        if user_token:
-            ngrok.set_auth_token(user_token)
-    elif token:
-        ngrok.set_auth_token(token)
+    # Launch cloudflared
+    # Cloudflare logs to stderr
+    process = subprocess.Popen(
+        [CLOUDFLARED_EXE, "tunnel", "--url", "http://localhost:8000"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        bufsize=1
+    )
+
+    url_found = False
+
+    def read_stderr():
+        nonlocal url_found
+        url_pattern = re.compile(r"(https://[a-zA-Z0-9-]+\.trycloudflare\.com)")
+        
+        while True:
+            line = process.stderr.readline()
+            if not line:
+                break
+            
+            # Print important status logs if needed, but mostly we look for the URL
+            match = url_pattern.search(line)
+            if match and not url_found:
+                url_found = True
+                public_url = match.group(1)
+                
+                print("\n" + "✅ " * 15)
+                print("🎉 YOUR PUBLIC LINK IS ACTIVE!")
+                print("✅ " * 15 + "\n")
+                print(f"👉 Base URL: {public_url}\n")
+                print("📋 COPY AND PASTE INTO YOUR WHATSAPP SETTINGS:")
+                print("─" * 60)
+                print("1️⃣ For Meta WhatsApp Cloud API (developers.facebook.com):")
+                print(f"   Callback URL : {public_url}/webhook")
+                print(f"   Verify Token : agridoc_verify_token")
+                print("─" * 60)
+                print("\n⏳ Tunnel is running! (Press Ctrl + C to stop)\n")
+
+    # Start a thread to read stderr so it doesn't block
+    t = threading.Thread(target=read_stderr, daemon=True)
+    t.start()
 
     try:
-        print("[INFO] Starting tunnel to http://localhost:8000 ...")
-        tunnel = ngrok.connect(8000, bind_tls=True)
-        public_url = tunnel.public_url
-
-        print("\n" + "✅ " * 15)
-        print("🎉 YOUR PUBLIC LINK IS ACTIVE!")
-        print("✅ " * 15 + "\n")
-        print(f"👉 Base URL: {public_url}\n")
-        print("📋 COPY AND PASTE INTO YOUR WHATSAPP SETTINGS:")
-        print("─" * 60)
-        print("1️⃣ For Meta WhatsApp Cloud API (developers.facebook.com):")
-        print(f"   Callback URL : {public_url}/webhook")
-        print(f"   Verify Token : agridoc_verify_token")
-        print("─" * 60)
-        print("\n⏳ Tunnel is running! (Press Ctrl + C to stop)\n")
-
-        # Keep running
-        while True:
+        # Keep main thread alive
+        while process.poll() is None:
             time.sleep(1)
-
+        
+        if process.returncode != 0:
+            print(f"\n❌ Cloudflare tunnel exited with code {process.returncode}")
+            
     except KeyboardInterrupt:
         print("\n[INFO] Shutting down tunnel...")
-        ngrok.disconnect(public_url)
+        process.terminate()
         sys.exit(0)
-    except Exception as e:
-        print(f"\n❌ Error starting tunnel: {e}")
-        print("\n💡 Tip: Get your free authtoken at https://dashboard.ngrok.com/get-started/your-authtoken and run again.")
 
 if __name__ == "__main__":
     start_tunnel()
