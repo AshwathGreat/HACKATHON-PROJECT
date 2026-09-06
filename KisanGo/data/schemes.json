@@ -1,0 +1,1124 @@
+{
+  "_readme": "Deterministic matching ONLY reads this file. Never let an LLM generate or edit scheme entries. Covers Central schemes across all 28 states of India plus State Government schemes.",
+  "schemes": [
+    {
+      "scheme_id": "pmfby",
+      "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY) - Crop Insurance",
+      "state": "All India (including Maharashtra)",
+      "level": "Central Government",
+      "applicable_crops": [
+        "Tomato",
+        "Cotton",
+        "Soybean",
+        "Onion",
+        "Rice",
+        "*"
+      ],
+      "category": "Crop insurance / pest & disease damage compensation",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Farmer must have enrolled for PMFBY for the relevant season (Kharif/Rabi) BEFORE the loss occurred, in a notified crop/area, to claim compensation. If not already enrolled, the farmer is not eligible for a claim on a loss that already happened, but should enroll before the next season."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenancy proof",
+        "Bank account details (linked to Aadhaar)",
+        "Sowing certificate (in some cases)",
+        "PMFBY policy/enrollment proof"
+      ],
+      "application_process": "Enroll before the season's cut-off date via bank branch, Common Service Centre (CSC), authorized insurance channel partner, or the national Crop Insurance app/portal. To claim after a loss, report within 72 hours of the damaging event through the portal, app, or insurance company/bank.",
+      "official_source": "https://pmfby.gov.in",
+      "last_verified": "2026-09-03",
+      "short_name": "PMFBY"
+    },
+    {
+      "scheme_id": "pmkisan",
+      "scheme_name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+      "state": "All India (including Maharashtra)",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Direct income support",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Income support scheme, not tied to a specific crop-loss event. Eligible landholding farmer families receive fixed installments per year, subject to standard exclusion criteria (e.g. certain institutional landholders, income-tax payers) set by the scheme guidelines."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land record documents",
+        "Bank account details"
+      ],
+      "application_process": "Register via the PM-KISAN portal, Common Service Centre (CSC), or local revenue/agriculture office (patwari/talathi/agriculture assistant) for eKYC and land record verification.",
+      "official_source": "https://pmkisan.gov.in",
+      "last_verified": "2026-09-03",
+      "short_name": "PM-KISAN"
+    },
+    {
+      "scheme_id": "maha_dbt_farmer_schemes",
+      "scheme_name": "MahaDBT Farmer Schemes Portal (multiple Maharashtra state schemes)",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Multiple: input subsidy, mechanization, irrigation support, etc. (varies by sub-scheme)",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "MahaDBT is an umbrella portal listing multiple Maharashtra Department of Agriculture schemes (subsidies for seeds/equipment/irrigation etc). Specific eligibility varies by sub-scheme and is set each season on the portal — the farmer should check current open schemes for their district and crop."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "7/12 land extract and 8-A record",
+        "Bank account details"
+      ],
+      "application_process": "Register and apply directly on the MahaDBT Farmer portal; specific sub-schemes open/close on a rolling basis through the season.",
+      "official_source": "https://mahadbt.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "maharashtra_krishi_dept",
+      "scheme_name": "Maharashtra Department of Agriculture - General Farmer Support & Advisory",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Advisory / scheme directory / extension support",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Not a single scheme — this is the state Department of Agriculture's own site, useful as an authoritative directory for current district-level schemes, disaster relief input-subsidy (Government Resolution based, issued after specific calamities), and contact details for local Krishi Vibhag officers."
+      },
+      "required_documents": [
+        "Varies by specific scheme/GR — check current notifications"
+      ],
+      "application_process": "Contact the local Krishi Vibhag office (Taluka/District Agriculture Officer) or check the department website for current Government Resolutions (GRs) relevant to your district and situation (e.g. post-calamity input subsidy).",
+      "official_source": "https://krishi.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "maharashtra_disaster_input_subsidy",
+      "scheme_name": "Maharashtra Disaster/Calamity Input Subsidy (crop loss relief)",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Post-calamity input subsidy for significant crop damage",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": 33,
+        "notes": "Maharashtra periodically issues Government Resolutions (GRs) providing input subsidy to farmers after natural calamities (unseasonal rain, pest outbreaks, etc.) when crop loss crosses a threshold - historically around 33% loss, following national SDRF/NDRF norms, though the exact threshold and rate vary by GR. This is only genuinely relevant if your damage is significant."
+      },
+      "required_documents": [
+        "7/12 land extract and 8-A record",
+        "Aadhaar card",
+        "Bank account details",
+        "Panchnama (crop damage survey/assessment) done by local revenue/agriculture officials"
+      ],
+      "application_process": "Crop damage is typically assessed via a village-level Panchnama survey conducted by the Talathi/Agriculture Assistant after a calamity is reported. Contact your local Krishi Vibhag or Talathi office to request a survey if you haven't already had one done. Payment follows the specific GR issued for that calamity/season.",
+      "official_source": "https://krishi.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "kcc",
+      "scheme_name": "Kisan Credit Card Scheme",
+      "short_name": "KCC",
+      "state": "All India",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Agricultural Credit",
+      "description": "Short-term crop loans up to ₹3 lakh at 7% interest (4% effective with government subsidy). Flexible repayment aligned with harvest.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Short-term crop loans up to ₹3 lakh at 7% interest (4% effective with government subsidy). Flexible repayment aligned with harvest."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Passport photo",
+        "Bank account details"
+      ],
+      "application_process": "Apply at any bank branch, Regional Rural Bank, or cooperative bank with land records.",
+      "official_source": "https://fasalrin.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "pmksy",
+      "scheme_name": "Pradhan Mantri Krishi Sinchayee Yojana",
+      "short_name": "PMKSY",
+      "state": "All India",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Micro-Irrigation Subsidy",
+      "description": "'More Crop Per Drop' — subsidies on drip and sprinkler irrigation systems. Covers up to 55% (small/marginal) or 45% (others) of cost.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "'More Crop Per Drop' — subsidies on drip and sprinkler irrigation systems. Covers up to 55% (small/marginal) or 45% (others) of cost."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account",
+        "Quotation from approved vendor"
+      ],
+      "application_process": "Apply through state agriculture department or district horticulture office. Check DBT portal.",
+      "official_source": "https://pmksy.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "enam",
+      "scheme_name": "National Agriculture Market",
+      "short_name": "e-NAM",
+      "state": "All India",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Market Access",
+      "description": "Online trading platform enabling farmers to sell crops to buyers across India, getting better prices through transparent auction.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Online trading platform enabling farmers to sell crops to buyers across India, getting better prices through transparent auction."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Bank account details",
+        "IFSC code"
+      ],
+      "application_process": "Register at enam.gov.in or at your nearest APMC mandi.",
+      "official_source": "https://enam.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "pkvy",
+      "scheme_name": "Paramparagat Krishi Vikas Yojana",
+      "short_name": "PKVY",
+      "state": "All India",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Organic Farming Support",
+      "description": "₹50,000/hectare support for adopting organic farming through cluster approach. Includes certification and market linkage support.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "₹50,000/hectare support for adopting organic farming through cluster approach. Includes certification and market linkage support."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Group/cluster registration"
+      ],
+      "application_process": "Contact local Krishi Vigyan Kendra (KVK) or district agriculture office for cluster formation.",
+      "official_source": "https://pgsindia-ncof.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "smam",
+      "scheme_name": "Sub-Mission on Agricultural Mechanization",
+      "short_name": "SMAM",
+      "state": "All India",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Farm Equipment Subsidy",
+      "description": "Subsidy up to 50% on tractors, harvesters, and farm equipment. Registered on DBT Agriculture portal.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Subsidy up to 50% on tractors, harvesters, and farm equipment. Registered on DBT Agriculture portal."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Equipment quotation",
+        "Bank account"
+      ],
+      "application_process": "Register on DBT Agriculture portal and apply through district agriculture office.",
+      "official_source": "https://agrimachinery.nic.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "rkvy",
+      "scheme_name": "Rashtriya Krishi Vikas Yojana",
+      "short_name": "RKVY-RAFTAAR",
+      "state": "All India",
+      "level": "Central Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Agriculture Infrastructure",
+      "description": "Strengthens agriculture and allied sector infrastructure. Funds for storage, processing units, and agri-entrepreneurship.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Strengthens agriculture and allied sector infrastructure. Funds for storage, processing units, and agri-entrepreneurship."
+      },
+      "required_documents": [
+        "Project proposal",
+        "Land records",
+        "Bank details"
+      ],
+      "application_process": "Apply through State Agriculture Department. States prepare project proposals for central approval.",
+      "official_source": "https://rkvy.nic.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "mahadbt",
+      "scheme_name": "MahaDBT Farmer Schemes Portal",
+      "short_name": "MahaDBT",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Input Subsidy, Equipment, Irrigation",
+      "description": "Umbrella portal for Maharashtra state agricultural schemes including seed subsidy, equipment grants, and irrigation support.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Umbrella portal for Maharashtra state agricultural schemes including seed subsidy, equipment grants, and irrigation support."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "7/12 land extract",
+        "8-A record",
+        "Bank account"
+      ],
+      "application_process": "Register on mahadbt.maharashtra.gov.in. Schemes open/close seasonally — check current open schemes.",
+      "official_source": "https://mahadbt.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "namo_shetkari",
+      "scheme_name": "Namo Shetkari Maha Samman Nidhi",
+      "short_name": "Namo Shetkari Yojana",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Direct Income Support — additional ₹6,000/year",
+      "description": "Maharashtra's own farmer support scheme giving ₹6,000/year on top of PM-KISAN's ₹6,000, effectively ₹12,000/year total.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Maharashtra's own farmer support scheme giving ₹6,000/year on top of PM-KISAN's ₹6,000, effectively ₹12,000/year total."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "7/12 land extract",
+        "PM-KISAN registration",
+        "Bank account"
+      ],
+      "application_process": "Auto-enrolled if registered for PM-KISAN. Verify at mahaagri.gov.in.",
+      "official_source": "https://mahaagri.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "maha_disaster",
+      "scheme_name": "Maharashtra Calamity Input Subsidy (post-disaster)",
+      "short_name": "Calamity Input Subsidy",
+      "state": "Maharashtra",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Crop Loss Relief (≥33% damage)",
+      "description": "Input subsidy after natural calamities when crop loss exceeds ~33%, following SDRF/NDRF norms. Issued via Government Resolution.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": 33,
+        "notes": "Input subsidy after natural calamities when crop loss exceeds ~33%, following SDRF/NDRF norms. Issued via Government Resolution."
+      },
+      "required_documents": [
+        "7/12 extract",
+        "Aadhaar",
+        "Bank details",
+        "Panchnama (crop damage survey)"
+      ],
+      "application_process": "Request Panchnama from local Talathi/Agriculture Assistant. Payment follows GR for that calamity.",
+      "official_source": "https://krishi.maharashtra.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "punjab_kissan_card",
+      "scheme_name": "Chief Minister Punjab Kissan Card",
+      "short_name": "CM Kissan Card",
+      "state": "Punjab",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Agricultural Credit",
+      "description": "Punjab's farmer credit card scheme offering easy credit for crop production at subsidized interest rates.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Punjab's farmer credit card scheme offering easy credit for crop production at subsidized interest rates."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account"
+      ],
+      "application_process": "Apply at district agriculture office or nearest bank branch.",
+      "official_source": "https://agripb.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "punjab_msp",
+      "scheme_name": "Punjab Minimum Support Price Procurement",
+      "short_name": "MSP Procurement",
+      "state": "Punjab",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Price Support",
+      "description": "Paddy and wheat procurement at MSP through PUNGRAIN and FCI. Ensures farmers get guaranteed minimum prices.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Paddy and wheat procurement at MSP through PUNGRAIN and FCI. Ensures farmers get guaranteed minimum prices."
+      },
+      "required_documents": [
+        "J-form (land records)",
+        "Aadhaar card",
+        "Bank account"
+      ],
+      "application_process": "Register at nearest government procurement center (mandi) before harvest season.",
+      "official_source": "https://agripb.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "haryana_bhavantar",
+      "scheme_name": "Haryana Bhavantar Bharpai Yojana",
+      "short_name": "Bhavantar Bharpai",
+      "state": "Haryana",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Price Deficiency Payment",
+      "description": "Compensates farmers if market prices fall below MSP for vegetables and horticultural crops.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Compensates farmers if market prices fall below MSP for vegetables and horticultural crops."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Bank account",
+        "Land records",
+        "Mandi registration"
+      ],
+      "application_process": "Register on fasal.haryana.gov.in before sowing season.",
+      "official_source": "https://fasal.haryana.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "haryana_meri_fasal",
+      "scheme_name": "Meri Fasal Mera Byora (Crop Registration)",
+      "short_name": "Meri Fasal Mera Byora",
+      "state": "Haryana",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Crop Registration & MSP",
+      "description": "Mandatory crop registration portal enabling MSP procurement, insurance and input subsidy access.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Mandatory crop registration portal enabling MSP procurement, insurance and input subsidy access."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account",
+        "Mobile number"
+      ],
+      "application_process": "Register on fasal.haryana.gov.in or at nearest CSC/Jandhan center.",
+      "official_source": "https://fasal.haryana.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "up_kisan_sahayata",
+      "scheme_name": "UP Kisan Andolan Sahayata Yojana",
+      "short_name": "Kisan Andolan Sahayata",
+      "state": "Uttar Pradesh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Farmer Support",
+      "description": "UP state support for distressed farmers including compensation for crop damage and advisory services.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "UP state support for distressed farmers including compensation for crop damage and advisory services."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account"
+      ],
+      "application_process": "Contact Zila Krishi Adhikari (District Agriculture Officer) in your district.",
+      "official_source": "https://upagripardarshi.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "up_solar",
+      "scheme_name": "UP Mukhyamantri Laghu Sinchai Yojana (Solar Pumps)",
+      "short_name": "Solar Pump Scheme",
+      "state": "Uttar Pradesh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Irrigation Support",
+      "description": "Up to 90% subsidy on solar-powered irrigation pumps for small and marginal farmers in UP.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Up to 90% subsidy on solar-powered irrigation pumps for small and marginal farmers in UP."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account",
+        "Kisan credit card"
+      ],
+      "application_process": "Apply on upagriculture.com or through block agriculture office.",
+      "official_source": "https://upagriculture.com",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "gujarat_ikhedut",
+      "scheme_name": "iKhedut — Gujarat Farmer Schemes Portal",
+      "short_name": "iKhedut Portal",
+      "state": "Gujarat",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Multiple: Equipment, Seeds, Irrigation",
+      "description": "Single-window portal for all Gujarat agriculture schemes including implements subsidy, seed distribution, and micro-irrigation.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Single-window portal for all Gujarat agriculture schemes including implements subsidy, seed distribution, and micro-irrigation."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records (7/12, 8-A)",
+        "Bank account"
+      ],
+      "application_process": "Apply on ikhedut.gujarat.gov.in. Schemes open in crop season windows.",
+      "official_source": "https://ikhedut.gujarat.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "raj_kisan",
+      "scheme_name": "Raj Kisan Sathi Portal",
+      "short_name": "Raj Kisan Sathi",
+      "state": "Rajasthan",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Multiple Rajasthan Schemes",
+      "description": "Rajasthan's single-window portal for agriculture schemes including subsidy on seeds, fertilizers, sprinkler sets, and machinery.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Rajasthan's single-window portal for agriculture schemes including subsidy on seeds, fertilizers, sprinkler sets, and machinery."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records (Jamabandi)",
+        "Bank account"
+      ],
+      "application_process": "Apply at rajkisan.rajasthan.gov.in or nearest e-Mitra center.",
+      "official_source": "https://rajkisan.rajasthan.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "tn_innuyir",
+      "scheme_name": "Tamil Nadu CM Innuyir Crop Protection Scheme",
+      "short_name": "Innuyir Scheme",
+      "state": "Tamil Nadu",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Crop Loss Compensation",
+      "description": "Compensation for farmers who lose crops to natural disasters or extreme weather in Tamil Nadu.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": 33,
+        "notes": "Compensation for farmers who lose crops to natural disasters or extreme weather in Tamil Nadu."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Patta/land records",
+        "Bank account",
+        "Village administrative officer certificate"
+      ],
+      "application_process": "Contact nearest Village Administrative Officer (VAO) or Agricultural Extension Centre after crop loss.",
+      "official_source": "https://www.tn.gov.in/department/33",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "tn_vivasayam",
+      "scheme_name": "Tamil Nadu Agriculture Department Schemes",
+      "short_name": "TN Agriculture Portal",
+      "state": "Tamil Nadu",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Seeds, Equipment & Input Subsidy",
+      "description": "Multiple Tamil Nadu schemes for certified seeds at subsidized rates, farm mechanization, and soil health.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Multiple Tamil Nadu schemes for certified seeds at subsidized rates, farm mechanization, and soil health."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Patta/chitta land records",
+        "Bank account"
+      ],
+      "application_process": "Apply through district agriculture office or agri.tn.gov.in.",
+      "official_source": "https://agri.tn.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "karnataka_krishi",
+      "scheme_name": "Karnataka Raita Siri & Input Subsidy Schemes",
+      "short_name": "Raita Siri",
+      "state": "Karnataka",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Input Subsidy, Equipment, Insurance",
+      "description": "Karnataka's umbrella agricultural support including seed subsidy, equipment grants, and crop loss relief through raita.karnataka.gov.in.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Karnataka's umbrella agricultural support including seed subsidy, equipment grants, and crop loss relief through raita.karnataka.gov.in."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records (RTC/Pahani)",
+        "Bank account",
+        "Kisaan ID"
+      ],
+      "application_process": "Register at raita.karnataka.gov.in. Apply through respective taluk agriculture office.",
+      "official_source": "https://raita.karnataka.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "ap_rythu",
+      "scheme_name": "YSR Rythu Bharosa — AP Farmer Income Support",
+      "short_name": "YSR Rythu Bharosa",
+      "state": "Andhra Pradesh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Direct Income Support — ₹13,500/year",
+      "description": "AP's farmer investment support giving ₹13,500/year (on top of PM-KISAN). One of the highest state-level income supports in India.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "AP's farmer investment support giving ₹13,500/year (on top of PM-KISAN). One of the highest state-level income supports in India."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records (Pahani/Adangal)",
+        "Bank account linked to Aadhaar"
+      ],
+      "application_process": "Auto-enrolled if land records are updated. Verify at apagrisnet.gov.in.",
+      "official_source": "https://apagrisnet.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "ts_rythu_bandhu",
+      "scheme_name": "Telangana Rythu Bandhu Investment Support",
+      "short_name": "Rythu Bandhu",
+      "state": "Telangana",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Investment Support — ₹10,000/acre/year",
+      "description": "Telangana provides ₹10,000 per acre per year (₹5,000 each for Kharif and Rabi) as pre-season investment support.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "Telangana provides ₹10,000 per acre per year (₹5,000 each for Kharif and Rabi) as pre-season investment support."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Patta land records",
+        "Bank account"
+      ],
+      "application_process": "Auto-enrolled based on land records. Verify at rythubandhu.telangana.gov.in.",
+      "official_source": "https://rythubandhu.telangana.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "wb_krishak_bandhu",
+      "scheme_name": "West Bengal Krishak Bandhu Scheme",
+      "short_name": "Krishak Bandhu",
+      "state": "West Bengal",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Income Support & Life Insurance",
+      "description": "₹10,000/year income support plus ₹2 lakh life insurance for all farmers owning at least 1 katha of land.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "₹10,000/year income support plus ₹2 lakh life insurance for all farmers owning at least 1 katha of land."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account",
+        "Voter ID"
+      ],
+      "application_process": "Enroll through local Gram Panchayat or krishakbandhu.net.",
+      "official_source": "https://krishakbandhu.net",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "mp_mukhyamantri",
+      "scheme_name": "MP Mukhyamantri Krishak Udyami Yojana",
+      "short_name": "CM Krishak Udyami",
+      "state": "Madhya Pradesh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Agri-Entrepreneurship Loan Subsidy",
+      "description": "MP provides margin money subsidy of 15-20% for agriculture-related projects funded by banks, for young farmers and entrepreneurs.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "MP provides margin money subsidy of 15-20% for agriculture-related projects funded by banks, for young farmers and entrepreneurs."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Bank loan approval",
+        "Project report",
+        "Land records"
+      ],
+      "application_process": "Apply through MP Online portal or district agriculture office.",
+      "official_source": "https://mpagri.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "odisha_kalia",
+      "scheme_name": "Odisha Krushak Assistance for Livelihood & Income Augmentation",
+      "short_name": "KALIA Scheme",
+      "state": "Odisha",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Livelihood Support — ₹10,000/season",
+      "description": "₹10,000 per season for small/marginal farmers for inputs + ₹2 lakh life insurance. One of Odisha's flagship farmer welfare schemes.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": null,
+        "notes": "₹10,000 per season for small/marginal farmers for inputs + ₹2 lakh life insurance. One of Odisha's flagship farmer welfare schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account linked to Aadhaar"
+      ],
+      "application_process": "Verify enrollment at kalia.odisha.gov.in. Grievances via KALIA portal.",
+      "official_source": "https://kalia.odisha.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "bihar_krishi",
+      "scheme_name": "Bihar Krishi Input Anudan Yojana",
+      "short_name": "Bihar Krishi Input Subsidy",
+      "state": "Bihar",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Disaster Input Subsidy",
+      "description": "Input subsidy to Bihar farmers after natural calamities (flood, drought, unseasonal rain) — rate varies by disaster notification.",
+      "conditions": {
+        "insurance_status_required": false,
+        "min_damage_pct": 33,
+        "notes": "Input subsidy to Bihar farmers after natural calamities (flood, drought, unseasonal rain) — rate varies by disaster notification."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land records",
+        "Bank account",
+        "DBT Agriculture registration"
+      ],
+      "application_process": "Apply on dbtagriculture.bihar.gov.in during open application window after disaster notification.",
+      "official_source": "https://dbtagriculture.bihar.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "kerala_portal",
+      "scheme_name": "Kerala State Agriculture & Farmer Support Services",
+      "short_name": "Kerala Agricultural Portal",
+      "state": "Kerala",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Kerala Department of Agriculture Services",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Kerala.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Kerala State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://karshika.kerala.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://karshika.kerala.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "assam_portal",
+      "scheme_name": "Assam State Agriculture & Farmer Support Services",
+      "short_name": "Assam Agri Portal",
+      "state": "Assam",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Directorate of Agriculture Assam",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Assam.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Assam State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agricoop.assam.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agricoop.assam.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "chhattisgarh_portal",
+      "scheme_name": "Chhattisgarh State Agriculture & Farmer Support Services",
+      "short_name": "Chhattisgarh Kisan Nyay Yojana",
+      "state": "Chhattisgarh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Rajiv Gandhi Kisan Nyay Yojana & Krishi Vibhag",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Chhattisgarh.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Chhattisgarh State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://kisan.cg.nic.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://kisan.cg.nic.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "jharkhand_portal",
+      "scheme_name": "Jharkhand State Agriculture & Farmer Support Services",
+      "short_name": "Jharkhand Krishi Rin Mafi Yojana",
+      "state": "Jharkhand",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Jharkhand Agriculture Department & Loan Relief",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Jharkhand.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Jharkhand State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://krmy.jharkhand.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://krmy.jharkhand.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "himachal_pradesh_portal",
+      "scheme_name": "Himachal Pradesh State Agriculture & Farmer Support Services",
+      "short_name": "Himachal Prakritik Kheti",
+      "state": "Himachal Pradesh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Himachal Pradesh Agriculture Department Portal",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Himachal Pradesh.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Himachal Pradesh State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://spnfhimachal.nic.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://spnfhimachal.nic.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "uttarakhand_portal",
+      "scheme_name": "Uttarakhand State Agriculture & Farmer Support Services",
+      "short_name": "Uttarakhand Krishi Vibhag",
+      "state": "Uttarakhand",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Uttarakhand Department of Agriculture Schemes",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Uttarakhand.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Uttarakhand State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agriculture.uk.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agriculture.uk.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "goa_portal",
+      "scheme_name": "Goa State Agriculture & Farmer Support Services",
+      "short_name": "Goa Krishi Portal",
+      "state": "Goa",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Directorate of Agriculture Goa",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Goa.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Goa State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agri.goa.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agri.goa.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "sikkim_portal",
+      "scheme_name": "Sikkim State Agriculture & Farmer Support Services",
+      "short_name": "Sikkim Organic Mission",
+      "state": "Sikkim",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Sikkim Organic Agriculture & Horticulture Support",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Sikkim.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Sikkim State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://sikkim.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://sikkim.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "tripura_portal",
+      "scheme_name": "Tripura State Agriculture & Farmer Support Services",
+      "short_name": "Tripura Agri Portal",
+      "state": "Tripura",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Department of Agriculture Tripura",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Tripura.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Tripura State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agri.tripura.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agri.tripura.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "meghalaya_portal",
+      "scheme_name": "Meghalaya State Agriculture & Farmer Support Services",
+      "short_name": "Meghalaya Agriculture Portal",
+      "state": "Meghalaya",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Meghalaya Agriculture & Farmer Welfare",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Meghalaya.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Meghalaya State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://megagriculture.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://megagriculture.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "mizoram_portal",
+      "scheme_name": "Mizoram State Agriculture & Farmer Support Services",
+      "short_name": "Mizoram Agriculture Department",
+      "state": "Mizoram",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Mizoram Agriculture Schemes & Subsidies",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Mizoram.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Mizoram State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agriculture.mizoram.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agriculture.mizoram.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "manipur_portal",
+      "scheme_name": "Manipur State Agriculture & Farmer Support Services",
+      "short_name": "Manipur Agri Portal",
+      "state": "Manipur",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Department of Agriculture Manipur",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Manipur.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Manipur State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agrimanipur.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agrimanipur.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "arunachal_pradesh_portal",
+      "scheme_name": "Arunachal Pradesh State Agriculture & Farmer Support Services",
+      "short_name": "Arunachal Agri Portal",
+      "state": "Arunachal Pradesh",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Department of Agriculture Arunachal Pradesh",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Arunachal Pradesh.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Arunachal Pradesh State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agri.arunachal.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agri.arunachal.gov.in",
+      "last_verified": "2026-09-03"
+    },
+    {
+      "scheme_id": "nagaland_portal",
+      "scheme_name": "Nagaland State Agriculture & Farmer Support Services",
+      "short_name": "Nagaland Agriculture Portal",
+      "state": "Nagaland",
+      "level": "State Government",
+      "applicable_crops": [
+        "*"
+      ],
+      "category": "Directorate of Agriculture Nagaland",
+      "description": "Official state agricultural assistance, subsidies, certified seeds, and calamity relief for farmers in Nagaland.",
+      "conditions": {
+        "insurance_status_required": false,
+        "notes": "Administered by Nagaland State Department of Agriculture. Check portal for active seasonal schemes."
+      },
+      "required_documents": [
+        "Aadhaar card",
+        "Land ownership/tenant records",
+        "Bank account details"
+      ],
+      "application_process": "Apply online at https://agriculture.nagaland.gov.in or visit the nearest block/district Agriculture Officer.",
+      "official_source": "https://agriculture.nagaland.gov.in",
+      "last_verified": "2026-09-03"
+    }
+  ]
+}
